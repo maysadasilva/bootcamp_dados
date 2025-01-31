@@ -7,7 +7,7 @@ Este Bootcamp foi realizado atráves da plataforma [DIO.ME.](https://auth.dio.me
 
 PBL - Aprendizagem voltada a Projetos
  - Ela consite em criar projetos práticos que são totalmente voltado ao mundo real para demonstrar as competências de cada pessoa que estará desenvolvendo esse projeto.
- - Portifólio: ajudar a contribuir no projeto reforcando as competências técnicas assim formentando o networking.
+ - Portfólio: ajudar a contribuir no projeto reforcando as competências técnicas assim formentando o networking.
 
 Desevolva suas habilidades
 | Hard Skills   | Soft Skills |
