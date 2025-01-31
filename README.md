@@ -16,3 +16,5 @@ Desevolva suas habilidades
 | Bando de Dados     | Pensamento Crítico|        |
 |Arquitetura de Sistemas |  Gerenciamento do tempo                      |
 | Ferramentas         |                      Comunicação
+
+- Também neste módulo teve uma video aula de como contribuir um projeto open source no GitHub
