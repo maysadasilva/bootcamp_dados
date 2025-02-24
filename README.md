@@ -19,6 +19,7 @@ Desevolva suas habilidades
 
 - Também neste módulo teve uma video aula de como contribuir um projeto open source no GitHub
 - Foi criado um Issues como exemplo na aula de contribuição de um projeto Open Source.
+- Depois fiz uma contribuição Open Source, como desafio propsoto.
 
 Iniciado em Janeiro de 2025.
 
