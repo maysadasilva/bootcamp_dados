@@ -1,0 +1,22 @@
+
+CREATE DATABASE firtsExample;
+USE  firtsExample;
+
+CREATE TABLE PERIODICOS(
+	ID int not null auto_increment PRIMARY KEY,
+	ISS INT NOT NULL,
+    NOME VARCHAR (120),
+    ID_EDITORA int not null
+);
+
+DROP TABLE EDITORA;
+
+CREATE TABLE EDITORA(
+	ID int not null auto_increment PRIMARY KEY,
+    NOME_EDITORA VARCHAR(120) UNIQUE,
+    PAIS VARCHAR(10)
+);
+
+ALTER TABLE PERIODICOS ADD CONSTRAINT fk_editora_periodico FOREIGN KEY (ID_EDITORA) REFERENCES EDITORA(ID);
+
+show tables;
