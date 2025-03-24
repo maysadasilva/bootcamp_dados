@@ -25,3 +25,5 @@ create table comida_favorita(
 
 desc comida_favorita;
 
+insert into pessoa values ('5', 'Carolina', 'Silva', 'F','2004-03-05' ,'Rua Subida', ' Guariba', 'São Paulo', 'Brasil','9090900');
+select * from pessoa;
