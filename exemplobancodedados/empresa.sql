@@ -43,8 +43,9 @@ create table projeto(
    constraint fk_num_depa foreign key (num_departamento) references departamento(numero)
 );
 
+drop table funcionario_projeto;
 create table funcionario_projeto(
-    Essn char(5) not null,
+    Essn char(9) not null,
     projeto_numero int not null,
     horas datetime not null,
    constraint pk_essn primary key (Essn, projeto_numero),
@@ -88,8 +89,11 @@ INSERT INTO projeto (nome, numero_projeto, projeto_localizacao, num_departamento
 
 -- Inserindo funcionários em projetos
 INSERT INTO funcionario_projeto (Essn, projeto_numero, horas) VALUES
-('123456789', 101, '2024-03-01')
+('987654321', '102', '2024-03-01'),
+('456789123', '103', '2024-03-01');
 
+
+select * from funcionario_projeto;
 
 -- Inserindo dependentes
 INSERT INTO dependente (Essn, dependente_nome, sexo, data_nascimento, relacionamento_empregado) VALUES
@@ -98,4 +102,26 @@ INSERT INTO dependente (Essn, dependente_nome, sexo, data_nascimento, relacionam
 ('456789123', 'Fernanda', 'F', '1992-03-05', 'Esposa');
 
 select * from dependente;
+
+
+/*utilizando valor INSS*/
+select primeiro_nome, salario, round( salario * 0.011,2) as 
+INSS from empresa.funcionario;
+
+/*definir aumento de salário para os gerentes que trabalham no projeto
+associado as Sistema ERP*/
+UPDATE empresa.funcionario AS f
+SET f.salario = f.salario * 1.10  -- Aumento de 10%
+WHERE f.Ssn IN (
+    SELECT d.gerente_ssn
+    FROM departamento AS d
+    JOIN projeto AS p ON d.numero = p.num_departamento
+    WHERE p.nome = 'Sistema ERP'
+);
+
+select * from empresa.funcionario;
+
+
+
+
 show tables;
