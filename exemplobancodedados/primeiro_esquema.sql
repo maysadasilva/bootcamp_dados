@@ -29,3 +29,8 @@ insert into pessoa values ('6', 'Silva', 'Silva', 'F','2004-03-05' ,'Rua Subida'
 ('7', 'Luis', 'Silva', 'M','2004-03-05' ,'Rua Subida', ' Guariba', 'São Paulo', 'Brasil','9090900');
 select * from pessoa;
 
+delete from pessoa where id_pessoa=1;
+
+insert into comida_favorita values ('5', 'Lasanha');
+
+select * from comida_favorita;
